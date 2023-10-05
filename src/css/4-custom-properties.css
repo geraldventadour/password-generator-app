@@ -1,0 +1,17 @@
+:root {
+  --color-red:rgb(246,74,74);
+  --color-orange:rgb(251,124,88);
+  --color-yellow: rgb(248,205,101);
+  --color-neon-green:rgb(164,255,175);
+  --color-almost-white:rgb(230,229,234);
+  --color-grey:rgb(128,124,146);
+  --color-dark-grey:rgb(36,35,44);
+  --color-very-dark-grey:rgb(24,23,31);
+  --font-size-heading-l:2rem;
+  --line-height-heading-l:2.6875rem;
+  --font-size-heading-m:1.5rem;
+  --line-height-heading-m:1.9375rem;
+  --font-size-body:1.125rem;
+  --line-height-body:1.4375rem;
+
+}
