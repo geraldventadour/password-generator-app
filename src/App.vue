@@ -2,8 +2,21 @@
 </script>
 
 <template>
-  <main>
+  <main class="center stack">
+    <h1>Password Generator</h1>
   </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+main {
+  --max-inline-size: 33.75rem;
+  --text-align: center;
+  --vertical-alignment: center;
+  min-height: 100vh;
+}
+
+h1 {
+  color: var(--color-grey);
+  font-size: var(--font-size-heading-m);
+}
+</style>
