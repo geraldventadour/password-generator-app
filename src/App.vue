@@ -10,7 +10,6 @@
 <style scoped>
 main {
   --max-inline-size: 33.75rem;
-  --text-align: center;
   --vertical-alignment: center;
   min-height: 100vh;
 }
@@ -18,5 +17,6 @@ main {
 h1 {
   color: var(--color-grey);
   font-size: var(--font-size-heading-m);
+  text-align: center;
 }
 </style>
