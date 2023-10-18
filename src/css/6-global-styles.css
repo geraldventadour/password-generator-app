@@ -4,3 +4,7 @@ body {
   font-family: var(--font-family);
   color: var(--color-almost-white);
 }
+
+form {
+  accent-color: var(--color-neon-green);
+}
