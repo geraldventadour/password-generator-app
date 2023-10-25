@@ -5,6 +5,7 @@ import ThePasswordGenerator from './components/ThePasswordGenerator.vue';
 <template>
   <main class="center stack">
     <h1>Password Generator</h1>
+    <ThePasswordGenerator />
   </main>
 </template>
 
