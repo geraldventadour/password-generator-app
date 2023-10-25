@@ -42,6 +42,7 @@ button {
   --horizontal-alignment: center;
   --color: var(--color-dark-grey);
   --column-gap: 1.5rem;
+  --padding: 1.25rem;
   cursor: pointer;
 }
 
