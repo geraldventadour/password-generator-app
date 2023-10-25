@@ -16,6 +16,7 @@
   border-color: var(--border-color);
   padding: var(--padding);
 }
+
 .center {
   box-sizing: content-box;
   margin-inline: auto;
