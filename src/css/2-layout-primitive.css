@@ -24,7 +24,6 @@
   padding-inline: var(--padding-inline);
 }
 
-
 .cluster {
   display: flex;
   flex-wrap: var(--flex-wrap);

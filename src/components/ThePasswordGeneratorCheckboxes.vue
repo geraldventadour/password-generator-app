@@ -4,19 +4,19 @@
   <fieldset class="stack">
     <legend class="sr-only">Password must</legend>
     <div class="cluster">
-      <input type="checkbox" name="" id="uppercase">
+      <input type="checkbox" name="" id="uppercase" />
       <label for="uppercase">Include Uppercase Letters</label>
     </div>
     <div class="cluster">
-      <input type="checkbox" name="" id="lowercase">
+      <input type="checkbox" name="" id="lowercase" />
       <label for="lowercase">Include Lowercase Letters</label>
     </div>
     <div class="cluster">
-      <input type="checkbox" name="" id="numbers">
+      <input type="checkbox" name="" id="numbers" />
       <label for="numbers">Include Numbers</label>
     </div>
     <div class="cluster">
-      <input type="checkbox" name="" id="symbols">
+      <input type="checkbox" name="" id="symbols" />
       <label for="symbols">Include Symbols</label>
     </div>
   </fieldset>
@@ -28,11 +28,11 @@ fieldset {
 }
 
 .stack {
-  --margin-block-start: 1.25rem
+  --margin-block-start: 1.25rem;
 }
 
 .cluster {
-  --column-gap: 1.5rem
+  --column-gap: 1.5rem;
 }
 
 input {

@@ -1,5 +1,5 @@
 <script setup>
-import ThePasswordGenerator from './components/ThePasswordGenerator.vue';
+import ThePasswordGenerator from './components/ThePasswordGenerator.vue'
 </script>
 
 <template>
@@ -14,7 +14,7 @@ main {
   --max-inline-size: 33.75rem;
   --vertical-alignment: center;
   min-height: 100vh;
-  --padding-inline: 1rem
+  --padding-inline: 1rem;
 }
 
 h1 {
