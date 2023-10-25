@@ -12,6 +12,7 @@ main {
   --max-inline-size: 33.75rem;
   --vertical-alignment: center;
   min-height: 100vh;
+  --padding-inline: 1rem
 }
 
 h1 {
