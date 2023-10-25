@@ -1,0 +1,10 @@
+body {
+  background-color:var(--color-very-dark-grey);
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: var(--color-almost-white);
+}
+
+form {
+  accent-color: var(--color-neon-green);
+}

@@ -1,9 +1,25 @@
 <script setup>
+import ThePasswordGenerator from './components/ThePasswordGenerator.vue';
 </script>
 
 <template>
-  <main>
+  <main class="center stack">
+    <h1>Password Generator</h1>
+    <ThePasswordGenerator />
   </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+main {
+  --max-inline-size: 33.75rem;
+  --vertical-alignment: center;
+  min-height: 100vh;
+  --padding-inline: 1rem
+}
+
+h1 {
+  color: var(--color-grey);
+  font-size: var(--font-size-heading-m);
+  text-align: center;
+}
+</style>
