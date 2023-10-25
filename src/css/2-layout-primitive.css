@@ -8,6 +8,14 @@
   margin-block-start: var(--margin-block-start);
 }
 
+.box {
+  color: var(--color);
+  background-color: var(--background-color);
+  border-width: var(--border-width);
+  border-style: var(--border-style);
+  border-color: var(--border-color);
+  padding: var(--padding);
+}
 .center {
   box-sizing: content-box;
   margin-inline: auto;
@@ -16,14 +24,6 @@
   padding-inline: var(--padding-inline);
 }
 
-.box {
-  color: var(--color);
-  background-color: var(--background-color);
-  border-width: var(--border-width);
-  border-style: var(--border-style);
-  border-color: var(--border-color);
-  padding: var(--padding, 1.5rem);
-}
 
 .cluster {
   display: flex;
