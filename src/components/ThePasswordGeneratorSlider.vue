@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 const passwordLength = ref(10)
 </script>
@@ -10,7 +10,7 @@ const passwordLength = ref(10)
       <label for="">Character Length</label>
       <output>{{ passwordLength }}</output>
     </div>
-    <input type="range" name="" id="" min="0" max="20" step="1" v-model="passwordLength">
+    <input type="range" name="" id="" min="0" max="20" step="1" v-model="passwordLength" />
   </div>
 </template>
 
@@ -29,7 +29,7 @@ output {
   color: var(--color-neon-green);
 }
 
-input[type="range"] {
+input[type='range'] {
   cursor: pointer;
 }
 

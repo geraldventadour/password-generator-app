@@ -16,6 +16,7 @@
   border-color: var(--border-color);
   padding: var(--padding);
 }
+
 .center {
   box-sizing: content-box;
   margin-inline: auto;
@@ -23,7 +24,6 @@
   max-inline-size: var(--max-inline-size);
   padding-inline: var(--padding-inline);
 }
-
 
 .cluster {
   display: flex;
