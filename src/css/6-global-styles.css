@@ -1,5 +1,5 @@
 body {
-  background-color:var(--color-very-dark-grey);
+  background-color: var(--color-very-dark-grey);
   font-weight: 700;
   font-family: var(--font-family);
   color: var(--color-almost-white);
@@ -8,3 +8,4 @@ body {
 form {
   accent-color: var(--color-neon-green);
 }
+
