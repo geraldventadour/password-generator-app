@@ -63,6 +63,7 @@ input {
   border: transparent;
   width: 100%;
   color: inherit;
+  max-inline-size: 20ch;
 }
 
 .button {
