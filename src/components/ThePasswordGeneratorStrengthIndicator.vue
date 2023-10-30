@@ -82,7 +82,6 @@ const passwordStrengthCssClass = computed(() => {
   .box {
     padding: 1.25rem 2rem;
   }
-
   .level {
     font-size: var(--font-size-heading-m);
   }
