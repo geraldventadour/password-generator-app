@@ -64,8 +64,9 @@ input {
   color: inherit;
   inline-size: 100%;
 }
+
 .button {
-  --column-gap: 1rem;
+  --column-gap: 0.5rem;
 }
 
 span {
@@ -77,6 +78,7 @@ button {
   border: transparent;
   cursor: pointer;
 }
+
 .button-copy:hover path {
   fill: var(--color-almost-white);
   background-color: black;
