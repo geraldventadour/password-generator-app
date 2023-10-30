@@ -31,9 +31,7 @@ watch(password, () => {
       type="text"
       name="generated-password"
       id="generated-password"
-      readonly="true"
-      aria-readonly="true"
-      value=""
+      :value="generatedPassword"
       placeholder="P4$5W0rD!"
     />
     <div class="button cluster">
