@@ -33,6 +33,7 @@ watch(password, () => {
       id="generated-password"
       :value="generatedPassword"
       placeholder="P4$5W0rD!"
+      disabled
     />
     <div class="button cluster">
       <span v-if="isPasswordCopied">COPIED</span>
