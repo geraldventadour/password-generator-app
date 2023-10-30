@@ -5,6 +5,9 @@ const props = defineProps({
   }
 })
 const isPasswordCopied = ref(false)
+const password = computed(() => {
+  return props?.generatedPassword
+})
 
 <template>
   <label for="generated-password" class="sr-only">Generated password</label>
