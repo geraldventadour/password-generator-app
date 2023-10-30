@@ -1,7 +1,12 @@
 <script setup>
 import { ref } from 'vue'
 
-const passwordLength = ref(10)
+const emit = defineEmits(['sliderChangeEvent'])
+const passwordLength = ref('0')
+
+function handleSliderChange() {
+  emit('sliderChangeEvent', passwordLength)
+}
 </script>
 
 <template>
@@ -10,7 +15,16 @@ const passwordLength = ref(10)
       <label for="">Character Length</label>
       <output>{{ passwordLength }}</output>
     </div>
-    <input type="range" name="" id="" min="0" max="20" step="1" v-model="passwordLength" />
+    <input
+      type="range"
+      name=""
+      id=""
+      min="0"
+      max="20"
+      step="1"
+      v-model="passwordLength"
+      @change="handleSliderChange"
+    />
   </div>
 </template>
 
