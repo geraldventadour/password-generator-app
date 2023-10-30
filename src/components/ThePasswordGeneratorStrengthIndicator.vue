@@ -48,6 +48,29 @@ const passwordStrengthCssClass = computed(() => {
   --column-gap: 0.5rem;
 }
 
+.indicators.too-weak > span:first-of-type {
+  background-color: var(--color-red);
+  outline-color: var(--color-red);
+}
+
+.indicators.weak > span:nth-of-type(1),
+.indicators.weak > span:nth-of-type(2) {
+  background-color: var(--color-orange);
+  outline: var(--color-orange);
+}
+
+.indicators.medium > span:nth-of-type(1),
+.indicators.medium > span:nth-of-type(2),
+.indicators.medium > span:nth-of-type(3) {
+  background-color: var(--color-yellow);
+  outline: var(--color-yellow);
+}
+
+.indicators.strong > span {
+  background-color: var(--color-neon-green);
+  outline-color: var(--color-neon-green);
+}
+
 .indicators > span {
   block-size: 1.75rem;
   inline-size: 0.625rem;
