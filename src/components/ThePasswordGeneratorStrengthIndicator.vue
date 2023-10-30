@@ -1,3 +1,4 @@
+<script setup>
 import { computed } from 'vue'
 
 const props = defineProps({
@@ -13,6 +14,7 @@ const passwordStrengthInUppercase = computed(() => {
 const passwordStrengthCssClass = computed(() => {
   return props.passwordStrength?.match(/\w+/g)?.join('-').toLowerCase()
 })
+</script>
 <template>
   <div class="box cluster">
     <span class="text">STRENGTH</span>
