@@ -66,7 +66,7 @@ input {
 }
 
 .button {
-  --column-gap: 0.5rem;
+  --column-gap: 1rem;
 }
 
 span {
