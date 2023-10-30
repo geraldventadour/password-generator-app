@@ -36,7 +36,7 @@ watch(password, () => {
       disabled
     />
     <div class="button cluster">
-      <span v-if="isPasswordCopied">COPIED</span>
+      <span v-show="isPasswordCopied">COPIED</span>
       <button class="button-copy" type="button">
         <svg width="21" height="24" xmlns="http://www.w3.org/2000/svg">
           <path
