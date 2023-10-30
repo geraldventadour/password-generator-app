@@ -6,6 +6,10 @@ const props = defineProps({
   }
 })
 
+const passwordStrengthInUppercase = computed(() => {
+  return props.passwordStrength?.toUpperCase()
+})
+
 <template>
   <div class="box cluster">
     <span class="text">STRENGTH</span>
