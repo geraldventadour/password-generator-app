@@ -10,6 +10,9 @@ const passwordStrengthInUppercase = computed(() => {
   return props.passwordStrength?.toUpperCase()
 })
 
+const passwordStrengthCssClass = computed(() => {
+  return props.passwordStrength?.match(/\w+/g)?.join('-').toLowerCase()
+})
 <template>
   <div class="box cluster">
     <span class="text">STRENGTH</span>
