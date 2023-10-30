@@ -1,5 +1,11 @@
 import { computed } from 'vue'
 
+const props = defineProps({
+  passwordStrength: {
+    type: String
+  }
+})
+
 <template>
   <div class="box cluster">
     <span class="text">STRENGTH</span>
