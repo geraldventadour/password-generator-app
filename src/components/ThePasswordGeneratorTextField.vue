@@ -1,4 +1,9 @@
-<script setup></script>
+const props = defineProps({
+  generatedPassword: {
+    type: String,
+    required: true
+  }
+})
 
 <template>
   <label for="generated-password" class="sr-only">Generated password</label>
