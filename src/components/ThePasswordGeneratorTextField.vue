@@ -8,6 +8,10 @@ const isPasswordCopied = ref(false)
 const password = computed(() => {
   return props?.generatedPassword
 })
+function handleCopyButtonClick() {
+  navigator.clipboard.writeText(password.value)
+  isPasswordCopied.value = true
+}
 
 <template>
   <label for="generated-password" class="sr-only">Generated password</label>
