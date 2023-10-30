@@ -1,4 +1,5 @@
-<script setup></script>
+import { computed } from 'vue'
+
 <template>
   <div class="box cluster">
     <span class="text">STRENGTH</span>
