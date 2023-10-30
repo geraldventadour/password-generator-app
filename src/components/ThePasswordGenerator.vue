@@ -3,17 +3,72 @@ import ThePasswordGeneratorTextField from './ThePasswordGeneratorTextField.vue'
 import ThePasswordGeneratorSlider from './ThePasswordGeneratorSlider.vue'
 import ThePasswordGeneratorCheckboxes from './ThePasswordGeneratorCheckboxes.vue'
 import ThePasswordGeneratorStrengthIndicator from './ThePasswordGeneratorStrengthIndicator.vue'
+import { computed, ref } from 'vue'
+import { generatePassword } from '../helpers/password.mjs'
+
+const passwordLength = ref(0)
+const checkedPasswordOptions = ref(null)
+const generatedPassword = ref('')
+
+function updatePasswordLength(length) {
+  passwordLength.value = parseInt(length.value, 10)
+}
+
+function updatePasswordOptions(options) {
+  checkedPasswordOptions.value = options.value
+}
+
+const STRENGTH_VALUES = {
+  0: '',
+  1: 'Too weak!',
+  2: 'Weak',
+  3: 'Medium',
+  4: 'Strong'
+}
+
+const isValidPassword = computed(() => {
+  return passwordLength.value && checkedPasswordOptions.value
+})
+
+const passwordStrength = computed(() => {
+  if (isValidPassword.value) {
+    return STRENGTH_VALUES[checkedPasswordOptions.value?.length]
+  }
+  return null
+})
+
+function generatePasswordOptionsFrom(checkedPasswordOptions) {
+  const options = {}
+  if (checkedPasswordOptions.includes('uppercase')) {
+    options.hasUpperCaseLetters = true
+  }
+  if (checkedPasswordOptions.includes('lowercase')) {
+    options.hasLowerCaseLetters = true
+  }
+  if (checkedPasswordOptions.includes('numbers')) {
+    options.hasNumbers = true
+  }
+  if (checkedPasswordOptions.includes('symbols')) {
+    options.hasSymbols = true
+  }
+  return options
+}
+
+function handleFormSubmit() {
+  const passwordOptions = generatePasswordOptionsFrom(checkedPasswordOptions.value)
+  generatedPassword.value = generatePassword(passwordLength.value, passwordOptions)
+}
 </script>
 
 <template>
-  <form class="form stack">
+  <form @submit.prevent="handleFormSubmit" class="form stack">
     <div class="wrapper">
-      <ThePasswordGeneratorTextField />
+      <ThePasswordGeneratorTextField :generated-password="generatedPassword" />
     </div>
     <div class="password-options wrapper box stack">
-      <ThePasswordGeneratorSlider />
-      <ThePasswordGeneratorCheckboxes />
-      <ThePasswordGeneratorStrengthIndicator />
+      <ThePasswordGeneratorSlider @slider-change-event="updatePasswordLength" />
+      <ThePasswordGeneratorCheckboxes @password-options-change="updatePasswordOptions" />
+      <ThePasswordGeneratorStrengthIndicator :password-strength="passwordStrength" />
       <button class="box cluster" type="submit">
         GENERATE<svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
           <path
