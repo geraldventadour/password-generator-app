@@ -54,6 +54,7 @@ watch(password, () => {
   container: password;
   --column-gap: 0;
   --padding-inline: 1rem;
+  --horizontal-alignment: space-between;
 }
 
 input {
