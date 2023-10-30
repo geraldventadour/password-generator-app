@@ -12,6 +12,9 @@ function handleCopyButtonClick() {
   navigator.clipboard.writeText(password.value)
   isPasswordCopied.value = true
 }
+watch(password, () => {
+  isPasswordCopied.value = false
+})
 
 <template>
   <label for="generated-password" class="sr-only">Generated password</label>
