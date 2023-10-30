@@ -12,13 +12,13 @@ function handleSliderChange() {
 <template>
   <div class="stack">
     <div class="cluster">
-      <label for="">Character Length</label>
+      <label for="length">Character Length</label>
       <output>{{ passwordLength }}</output>
     </div>
     <input
       type="range"
-      name=""
-      id=""
+      name="length"
+      id="length"
       min="0"
       max="20"
       step="1"
