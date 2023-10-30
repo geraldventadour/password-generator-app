@@ -61,11 +61,9 @@ input {
   font-size: var(--font-size-heading-m);
   background-color: transparent;
   border: transparent;
-  width: 100%;
   color: inherit;
   max-inline-size: 20ch;
 }
-
 .button {
   --column-gap: 0.5rem;
 }
@@ -79,7 +77,6 @@ button {
   border: transparent;
   cursor: pointer;
 }
-
 .button-copy:hover path {
   fill: var(--color-almost-white);
   background-color: black;
