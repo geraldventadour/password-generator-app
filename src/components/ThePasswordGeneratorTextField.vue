@@ -62,8 +62,9 @@ input {
   background-color: transparent;
   border: transparent;
   color: inherit;
-  max-inline-size: 20ch;
+  inline-size: 100%;
 }
+
 .button {
   --column-gap: 0.5rem;
 }
@@ -77,9 +78,14 @@ button {
   border: transparent;
   cursor: pointer;
 }
+
 .button-copy:hover path {
   fill: var(--color-almost-white);
   background-color: black;
+}
+
+svg {
+  max-width: none;
 }
 
 @container (min-width:540px) {
