@@ -20,6 +20,9 @@ const passwordStrengthCssClass = computed(() => {
     <span class="text">STRENGTH</span>
     <div class="value cluster">
       <span class="level">{{ passwordStrengthInUppercase }}</span>
+      <div class="indicators cluster" :class="passwordStrengthCssClass">
+        <span></span><span></span><span></span><span></span>
+      </div>
     </div>
   </div>
 </template>
